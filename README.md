@@ -26,3 +26,5 @@ The following resource files are included in the repository
 1. Clone the repository: ``` git clone https://github.com/zwright03/Three-Peas-In-a-Pod.git && cd Algorithm-Visualizer ```
 2. Create build folder: ``` mkdir build && cd build ```
 3. Generate Project: ``` cmake .. ```
+
+Note: In Visual Studio, be sure to set the "Algorithm-Visualizer" project as the startup project.

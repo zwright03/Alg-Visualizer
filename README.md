@@ -1,33 +1,28 @@
-This is a sorting visualizer and performance analyzer
+# Algorithm Visualizer
 
-Features include:
-- Visualizing the sorting processes of merge and quick sort step-by-step
-- Comparing the performance of the algorithms on a large data set in three scenarios
+A C++/SFML-based visualizer for the merge and quick sort algorithms, designed to help you see how they work in real-time.
+
+## Features
+
+- Visualizes the sorting processes of merge and quick sort step-by-step
+- Compares the performance of the algorithms on a large data set (125,000 entries) in three scenarios
       - Unsorted
       - Already sorted
       - Reverse sorted
+- Cross-platform CMake build system
+- Minimal setup -- just clone and run!
 
-Software requirements include:
+### Requirements
+
 - CMake 3.8+
 - Git (Required for CMake to fetch SFML)
-- C++17 or higher
-
-Hardware requirements include:
-- System with at least 8GB of ram
-- Modern CPU able to handle visualization and large datasets
+- C++17
 
 The following resource files are included in the repository
 - resources/data/2020_taxi_data.csv (Dataset file)
 - resources/fonts/Roboto-Bold.ttf (Font file)
 
-The workflow in the following order is:
-- Welcome screen with descriptive information
-- Merge and quick sort visualization
-- Performance testing on the dataset in different scenarios
-- Results screen with bar graphs comparing time and memory usage
-
-Build Instructions:
-1. Ensure 'git' is installed and accessible from the command line.
-2. Ensure CMake version 3.8+ is installed.
-3. C++ Compiler: Ensure you have a compiler that supports C++17 or later.
-4. Run CMake to configure the project. CMake will automatically fetch the SFML dependency.
+### Build & Run
+1. Clone the repository: ``` git clone https://github.com/zwright03/Three-Peas-In-a-Pod.git && cd Algorithm-Visualizer ```
+2. Create build folder: ``` mkdir build && cd build ```
+3. Generate Project: ``` cmake .. ```
